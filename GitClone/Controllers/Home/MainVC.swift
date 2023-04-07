@@ -7,34 +7,23 @@
 
 import UIKit
 
-class MainVC: UIViewController{
+class MainVC: BaseController {
  
-    
-    var btnsSetup : [BtnsModel] = [
-        BtnsModel(btnImage: UIImage(systemName: "circle.circle.fill")!, name: "Issues", btnBacground: .systemGreen),
-        BtnsModel(btnImage: UIImage(systemName: "line.3.crossed.swirl.circle.fill")!, name: "Pull Requiest", btnBacground: .systemBlue),
-        BtnsModel(btnImage: UIImage(systemName: "message")!, name: "Disscusions", btnBacground: .systemIndigo),
-        BtnsModel(btnImage: UIImage(systemName: "bus.doubledecker")!, name: "Repositories", btnBacground: .systemGray2),
-        BtnsModel(btnImage: UIImage(systemName: "building")!, name: "Organizations", btnBacground: .systemOrange),
-        BtnsModel(btnImage: UIImage(systemName: "star")!, name: "Started", btnBacground: .systemYellow)
-    ]
-    
+    // MARK: - Variables
+    var btnsSetup = ButtonDM.shared.buttons
     var user : [Repos] = []
-
     var searchController = UISearchController()
     var tableView : UITableView = UITableView()
     var isSearch = false
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
         view.backgroundColor = .clear
         setupNavBar()
         tableViewSetup()
     }
     
-    
-
      func setupNavBar() {
         
          let offset = -(searchController.searchBar.frame.height)
@@ -57,8 +46,8 @@ class MainVC: UIViewController{
         searchController.searchBar.returnKeyType = .search
         searchController.searchBar.delegate = self
         
-        tableView.register(MainTVC.self, forCellReuseIdentifier: "MainTVC")
-        tableView.register(SearchTVC.self, forCellReuseIdentifier: "SearchTVC")
+        tableView.register(MainTVC.self, forCellReuseIdentifier: MainTVC.reuseIdentifier)
+        tableView.register(SearchTVC.self, forCellReuseIdentifier: SearchTVC.reuseIdentifier)
         
         self.view.addSubview(tableView)
 
@@ -87,15 +76,16 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if isSearch {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "SearchTVC", for: indexPath) as! SearchTVC
+            let cell = tableView.dequeueReusableCell(withIdentifier: SearchTVC.reuseIdentifier, for: indexPath) as! SearchTVC
             cell.updateCell(user: user[indexPath.row], userName: searchController.searchBar.text!)
              cell.cellSetup()
             
              return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "MainTVC", for: indexPath) as! MainTVC
+            let cell = tableView.dequeueReusableCell(withIdentifier: MainTVC.reuseIdentifier, for: indexPath) as! MainTVC
              cell.updateCell(info: btnsSetup[indexPath.row])
-             cell.setupView()
+            cell.addViews()
+            cell.addConstraints()
              return cell
         }
       
@@ -137,7 +127,7 @@ extension MainVC : UISearchControllerDelegate, UISearchBarDelegate {
             } else {
                 
                 if searchBar.text!.contains(" ") {
-                    Alert.showAlert(forState: .error, message: "Username is error")
+                    Alert.showAlert(forState: .error, message: "Username is wrong")
                 } else {
                     self.user = user
                     self.tableView.reloadData()

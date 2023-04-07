@@ -11,6 +11,8 @@ import SDWebImage
 
 class SearchTVC: UITableViewCell {
 
+    static var reuseIdentifier: String = "SearchTVC"
+    
     let conteinerView = UIView()
     let avatarImage = UIImageView()
     let userNameLbl = UILabel()

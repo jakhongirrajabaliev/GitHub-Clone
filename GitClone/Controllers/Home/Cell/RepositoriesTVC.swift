@@ -10,6 +10,8 @@ import SnapKit
 
 class RepositoriesTVC: UITableViewCell {
 
+    static var reuseIdentifier: String = "RepositoriesTVC"
+    
     let conteinerView = UIView()
     let avatarImage = UIImageView()
     let userNameLbl = UILabel()

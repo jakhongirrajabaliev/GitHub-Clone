@@ -9,6 +9,8 @@ import UIKit
 
 class CommitTVC : UITableViewCell {
     
+    static var reuseIdentifier: String = "CommitTVC"
+    
     //OUTLETS
     let usernameLbl = UILabel()
     let commitTitle = UILabel()

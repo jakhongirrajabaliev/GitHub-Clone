@@ -14,19 +14,23 @@
 		7F1FCD17282D087100C67AC6 /* MainTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD16282D087100C67AC6 /* MainTBC.swift */; };
 		7F1FCD20282D182400C67AC6 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD1F282D182400C67AC6 /* SplashVC.swift */; };
 		7F1FCD22282D1C0A00C67AC6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD21282D1C0A00C67AC6 /* MainVC.swift */; };
-		7F1FCD24282D1C1A00C67AC6 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD23282D1C1A00C67AC6 /* ProfileVC.swift */; };
+		7F1FCD24282D1C1A00C67AC6 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD23282D1C1A00C67AC6 /* ProfileController.swift */; };
 		7F1FCD26282D1D4900C67AC6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD25282D1D4900C67AC6 /* LoginVC.swift */; };
 		7F1FCD28282E0AC900C67AC6 /* RepositoriesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD27282E0AC900C67AC6 /* RepositoriesTVC.swift */; };
 		7F1FCD2B282E361400C67AC6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD2A282E361400C67AC6 /* Request.swift */; };
 		7F1FCD2D282E362000C67AC6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD2C282E362000C67AC6 /* API.swift */; };
-		7F1FCD36282E39D600C67AC6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD35282E39D600C67AC6 /* User.swift */; };
-		7F1FCD3A282E3C4100C67AC6 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD39282E3C4100C67AC6 /* Commit.swift */; };
+		7F1FCD36282E39D600C67AC6 /* UserDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD35282E39D600C67AC6 /* UserDM.swift */; };
+		7F1FCD3A282E3C4100C67AC6 /* CommitDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD39282E3C4100C67AC6 /* CommitDM.swift */; };
 		7F1FCD3E282E5DA600C67AC6 /* MainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD3D282E5DA500C67AC6 /* MainTVC.swift */; };
 		7F1FCD40282E72EE00C67AC6 /* RepositoresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD3F282E72EE00C67AC6 /* RepositoresVC.swift */; };
 		7F1FCD42282E76D800C67AC6 /* SearchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD41282E76D800C67AC6 /* SearchTVC.swift */; };
 		7F1FCD44282E88BB00C67AC6 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD43282E88BA00C67AC6 /* Alert.swift */; };
 		7F1FCD48282EA37700C67AC6 /* CommitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD47282EA37700C67AC6 /* CommitVC.swift */; };
 		7F1FCD4A282EA39300C67AC6 /* CommitTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FCD49282EA39200C67AC6 /* CommitTVC.swift */; };
+		7F26C03A29E0120300AC83A5 /* ReposDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F26C03929E0120300AC83A5 /* ReposDM.swift */; };
+		7F26C03C29E0155600AC83A5 /* ButtonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F26C03B29E0155600AC83A5 /* ButtonsModel.swift */; };
+		7F26C04029E0187D00AC83A5 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F26C03F29E0187D00AC83A5 /* BaseController.swift */; };
+		7F26C04229E0547A00AC83A5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F26C04129E0547A00AC83A5 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,19 +44,23 @@
 		7F1FCD16282D087100C67AC6 /* MainTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTBC.swift; sourceTree = "<group>"; };
 		7F1FCD1F282D182400C67AC6 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		7F1FCD21282D1C0A00C67AC6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		7F1FCD23282D1C1A00C67AC6 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		7F1FCD23282D1C1A00C67AC6 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		7F1FCD25282D1D4900C67AC6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7F1FCD27282E0AC900C67AC6 /* RepositoriesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTVC.swift; sourceTree = "<group>"; };
 		7F1FCD2A282E361400C67AC6 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		7F1FCD2C282E362000C67AC6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		7F1FCD35282E39D600C67AC6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		7F1FCD39282E3C4100C67AC6 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		7F1FCD35282E39D600C67AC6 /* UserDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDM.swift; sourceTree = "<group>"; };
+		7F1FCD39282E3C4100C67AC6 /* CommitDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitDM.swift; sourceTree = "<group>"; };
 		7F1FCD3D282E5DA500C67AC6 /* MainTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTVC.swift; sourceTree = "<group>"; };
 		7F1FCD3F282E72EE00C67AC6 /* RepositoresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoresVC.swift; sourceTree = "<group>"; };
 		7F1FCD41282E76D800C67AC6 /* SearchTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTVC.swift; sourceTree = "<group>"; };
 		7F1FCD43282E88BA00C67AC6 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		7F1FCD47282EA37700C67AC6 /* CommitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitVC.swift; sourceTree = "<group>"; };
 		7F1FCD49282EA39200C67AC6 /* CommitTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitTVC.swift; sourceTree = "<group>"; };
+		7F26C03929E0120300AC83A5 /* ReposDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposDM.swift; sourceTree = "<group>"; };
+		7F26C03B29E0155600AC83A5 /* ButtonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsModel.swift; sourceTree = "<group>"; };
+		7F26C03F29E0187D00AC83A5 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		7F26C04129E0547A00AC83A5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		97F468B0771659A608214E3D /* Pods-GitClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitClone.release.xcconfig"; path = "Target Support Files/Pods-GitClone/Pods-GitClone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +118,7 @@
 				7F1FCD31282E364D00C67AC6 /* Controllers */,
 				7F1FCD29282E35F400C67AC6 /* Net */,
 				7F1FCD18282D0CFB00C67AC6 /* Helpers */,
+				7F26C03E29E0186300AC83A5 /* CustomContoller */,
 				7F1FCD07282D068800C67AC6 /* Assets.xcassets */,
 				7F1FCD09282D068800C67AC6 /* LaunchScreen.storyboard */,
 				7F1FCD0C282D068800C67AC6 /* Info.plist */,
@@ -137,8 +146,10 @@
 		7F1FCD30282E364000C67AC6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7F1FCD35282E39D600C67AC6 /* User.swift */,
-				7F1FCD39282E3C4100C67AC6 /* Commit.swift */,
+				7F1FCD35282E39D600C67AC6 /* UserDM.swift */,
+				7F1FCD39282E3C4100C67AC6 /* CommitDM.swift */,
+				7F26C03929E0120300AC83A5 /* ReposDM.swift */,
+				7F26C03B29E0155600AC83A5 /* ButtonsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,10 +178,10 @@
 		7F1FCD33282E366C00C67AC6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				7F1FCD4B282EA56B00C67AC6 /* Cell */,
 				7F1FCD21282D1C0A00C67AC6 /* MainVC.swift */,
 				7F1FCD3F282E72EE00C67AC6 /* RepositoresVC.swift */,
 				7F1FCD47282EA37700C67AC6 /* CommitVC.swift */,
+				7F1FCD4B282EA56B00C67AC6 /* Cell */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -178,7 +189,8 @@
 		7F1FCD34282E367D00C67AC6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				7F1FCD23282D1C1A00C67AC6 /* ProfileVC.swift */,
+				7F1FCD23282D1C1A00C67AC6 /* ProfileController.swift */,
+				7F26C04129E0547A00AC83A5 /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -192,6 +204,14 @@
 				7F1FCD49282EA39200C67AC6 /* CommitTVC.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		7F26C03E29E0186300AC83A5 /* CustomContoller */ = {
+			isa = PBXGroup;
+			children = (
+				7F26C03F29E0187D00AC83A5 /* BaseController.swift */,
+			);
+			path = CustomContoller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,22 +328,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F1FCD3A282E3C4100C67AC6 /* Commit.swift in Sources */,
-				7F1FCD24282D1C1A00C67AC6 /* ProfileVC.swift in Sources */,
+				7F1FCD3A282E3C4100C67AC6 /* CommitDM.swift in Sources */,
+				7F1FCD24282D1C1A00C67AC6 /* ProfileController.swift in Sources */,
 				7F1FCD3E282E5DA600C67AC6 /* MainTVC.swift in Sources */,
 				7F1FCD2B282E361400C67AC6 /* Request.swift in Sources */,
+				7F26C04029E0187D00AC83A5 /* BaseController.swift in Sources */,
 				7F1FCD17282D087100C67AC6 /* MainTBC.swift in Sources */,
 				7F1FCD40282E72EE00C67AC6 /* RepositoresVC.swift in Sources */,
+				7F26C03C29E0155600AC83A5 /* ButtonsModel.swift in Sources */,
 				7F1FCD26282D1D4900C67AC6 /* LoginVC.swift in Sources */,
 				7F1FCD48282EA37700C67AC6 /* CommitVC.swift in Sources */,
 				7F1FCD28282E0AC900C67AC6 /* RepositoriesTVC.swift in Sources */,
 				7F1FCD22282D1C0A00C67AC6 /* MainVC.swift in Sources */,
 				7F1FCD42282E76D800C67AC6 /* SearchTVC.swift in Sources */,
 				7F1FCCFF282D068500C67AC6 /* AppDelegate.swift in Sources */,
+				7F26C03A29E0120300AC83A5 /* ReposDM.swift in Sources */,
 				7F1FCD2D282E362000C67AC6 /* API.swift in Sources */,
-				7F1FCD36282E39D600C67AC6 /* User.swift in Sources */,
+				7F1FCD36282E39D600C67AC6 /* UserDM.swift in Sources */,
 				7F1FCD44282E88BB00C67AC6 /* Alert.swift in Sources */,
 				7F1FCD4A282EA39300C67AC6 /* CommitTVC.swift in Sources */,
+				7F26C04229E0547A00AC83A5 /* ProfileView.swift in Sources */,
 				7F1FCD20282D182400C67AC6 /* SplashVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

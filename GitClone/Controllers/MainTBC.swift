@@ -15,13 +15,11 @@ class MainTBC: UITabBarController {
         tabbarSetup()
     }
     
-
-   
     func tabbarSetup() {
         let vc1 = MainVC()
         let navVc1 = UINavigationController(rootViewController: vc1)
         
-        let vc2 = ProfileVC()
+        let vc2 = ProfileController()
         let navVc2 = UINavigationController(rootViewController: vc2)
         
         let tabbarItem1 = UITabBarItem(title: "Main", image: UIImage(systemName: "house.fill"), selectedImage: nil)
@@ -33,8 +31,6 @@ class MainTBC: UITabBarController {
         UITabBar.appearance().tintColor = #colorLiteral(red: 0.1694300473, green: 0.5687942505, blue: 1, alpha: 1)
         UITabBar.appearance().unselectedItemTintColor = #colorLiteral(red: 0.517593801, green: 0.5176843405, blue: 0.5175818801, alpha: 1)
 
-        
         viewControllers = [navVc1,navVc2]
         }
-
 }

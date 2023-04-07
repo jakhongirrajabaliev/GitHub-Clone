@@ -8,10 +8,8 @@
 import Foundation
 
 struct Commit {
-    
     var owner : String
     var date : String
     var url : String
     var htmlUrl : String
-    
 }
