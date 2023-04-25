@@ -19,14 +19,11 @@ class SplashVC: UIViewController {
        viewSetup()
     }
     
-
-
     func viewSetup() {
-
         conteinerView = UIView(frame: self.view.frame)
         conteinerView.backgroundColor = .white
         self.view.addSubview(conteinerView)
-        
+    
         conteinerImageView = UIImageView(frame: self.view.frame)
 
         conteinerView.addSubview(conteinerImageView)
@@ -41,9 +38,8 @@ class SplashVC: UIViewController {
             self.logoImage.transform = .identity
         } completion: { _ in
             
-            
             if UserDefaults.standard.string(forKey: "userFound") == nil {
-                let vc = LoginVC()
+                let vc = LoginController()
                 vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: false, completion: nil)
             } else {

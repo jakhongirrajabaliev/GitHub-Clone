@@ -9,8 +9,10 @@ import UIKit
 
 class ProfileController: BaseController {
 
+    // MARK: - Properties
     private let baseView: ProfileView = ProfileView()
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavBar()
@@ -23,6 +25,7 @@ class ProfileController: BaseController {
         view.addSubview(baseView)
     }
     
+    // MARK: - Private functions
     private func getUser() {
         API.shared.getUser(username: UserDefaults.standard.string(forKey: "userFound") ?? "") { user in
             self.baseView.followingLbl.text = "Following: \(user.following)"
