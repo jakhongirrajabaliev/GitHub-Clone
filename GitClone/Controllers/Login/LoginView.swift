@@ -111,7 +111,6 @@ class LoginView: UIView {
     // MARK: - Private functions
     private func addView() {
         self.addSubview(conteinerView)
-
         topLogoView.addSubview(topLogoImage)
         bottomLogoView.addSubview(bottomLogoImage)
         stackImage.addArrangedSubview(topLogoView)
@@ -122,11 +121,9 @@ class LoginView: UIView {
         userTfNameStack.addArrangedSubview(userNameTf)
         conteinerView.addSubview(userTfNameStack)
         conteinerView.addSubview(signButton)
-        
     }
 
     private func addConstraints() {
-        
         conteinerView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }

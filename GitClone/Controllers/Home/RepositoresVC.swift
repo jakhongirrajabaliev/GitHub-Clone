@@ -34,7 +34,7 @@ class RepositoresVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
  
-        tableView.register(RepositoriesTVC.self, forCellReuseIdentifier: "RepositoriesTVC")
+        tableView.register(RepositoriesTVC.self, forCellReuseIdentifier: RepositoriesTVC.reuseIdentifier)
         self.view.addSubview(tableView)
 
         tableView.snp.makeConstraints { make in
@@ -55,9 +55,8 @@ extension RepositoresVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       let cell = tableView.dequeueReusableCell(withIdentifier: "RepositoriesTVC", for: indexPath) as! RepositoriesTVC
+        let cell = tableView.dequeueReusableCell(withIdentifier: RepositoriesTVC.reuseIdentifier, for: indexPath) as! RepositoriesTVC
         cell.updateCell(user: user[indexPath.row])
-        cell.cellSetup()
         return cell
     }
     

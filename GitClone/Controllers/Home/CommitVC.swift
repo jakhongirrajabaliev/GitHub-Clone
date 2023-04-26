@@ -27,7 +27,7 @@ class CommitVC : UIViewController {
         tableView.separatorColor = .clear
         tableView.frame = self.view.frame
         tableView.center = self.view.center
-        tableView.register(CommitTVC.self, forCellReuseIdentifier: "CommitTVC")
+        tableView.register(CommitTVC.self, forCellReuseIdentifier: CommitTVC.reuseIdentifier)
         self.view.addSubview(tableView)
     }
     
@@ -47,8 +47,7 @@ extension CommitVC : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CommitTVC", for: indexPath) as! CommitTVC
-        cell.setupCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: CommitTVC.reuseIdentifier, for: indexPath) as! CommitTVC
         cell.updateCell(commit: self.data[indexPath.row])
         return cell
     }

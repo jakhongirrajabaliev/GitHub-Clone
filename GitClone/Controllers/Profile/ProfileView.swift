@@ -20,7 +20,6 @@ class ProfileView: UIView {
         let img = UIImageView()
         img.layer.cornerRadius = 75
         img.clipsToBounds =  true
-        
         return img
     }()
     
@@ -68,8 +67,47 @@ class ProfileView: UIView {
         return lbl
     }()
     
-    private let logOutBtn = UIButton()
-    private let bigStack = UIStackView()
+    private let nameLblStack: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.spacing = 0
+        stack.alignment = .fill
+        stack.distribution = .fill
+        return stack
+    }()
+    
+    private let stackImage: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .horizontal
+        stack.spacing = 16
+        stack.distribution = .fill
+        stack.alignment = .center
+        return stack
+    }()
+    
+    private let followStack: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .horizontal
+        stack.spacing = 10
+        stack.distribution = .fillProportionally
+        return stack
+    }()
+    
+    private let lblsStack: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.spacing = 16
+        return stack
+    }()
+    
+    private let bigStack: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.spacing = 40
+        return stack
+    }()
+    
+//    private let logOutBtn = UIButton()
    
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -77,44 +115,21 @@ class ProfileView: UIView {
         addConstraints()
     }
     
+    // MARK: - Private functions
     private func addViews() {
-        let nameLblStack = UIStackView()
         nameLblStack.addArrangedSubview(nameLbl)
         nameLblStack.addArrangedSubview(usernameLbl)
-        nameLblStack.axis = .vertical
-        nameLblStack.spacing = 0
-        nameLblStack.alignment = .fill
-        nameLblStack.distribution = .fill
-        
-        let stackImage = UIStackView()
         stackImage.addArrangedSubview(imageView)
         stackImage.addArrangedSubview(nameLblStack)
-        stackImage.axis = .horizontal
-        stackImage.spacing = 16
-        stackImage.distribution = .fill
-        stackImage.alignment = .center
-        
-        let followStack = UIStackView()
         followStack.addArrangedSubview(followersLbl)
         followStack.addArrangedSubview(followingLbl)
-        followStack.axis = .horizontal
-        followStack.spacing = 10
-        followStack.distribution = .fillProportionally
-        
-        let lblsStack = UIStackView()
         lblsStack.addArrangedSubview(companyLbl)
         lblsStack.addArrangedSubview(locationLbl)
         lblsStack.addArrangedSubview(followStack)
-        lblsStack.axis = .vertical
-        lblsStack.spacing = 16
-       
         bigStack.addArrangedSubview(stackImage)
         bigStack.addArrangedSubview(lblsStack)
-        bigStack.axis = .vertical
-        bigStack.spacing = 40
         addSubview(conteinerView)
         conteinerView.addSubview(bigStack)
-        
     }
     
     private func addConstraints() {
@@ -124,7 +139,7 @@ class ProfileView: UIView {
         
         bigStack.snp.makeConstraints { make in
             make.right.left.equalToSuperview().inset(16)
-            make.top.equalToSuperview().inset(0)
+            make.topMargin.equalTo(safeAreaInsets.top).offset(5)
         }
         
         imageView.snp.makeConstraints { make in

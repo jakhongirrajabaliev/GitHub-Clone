@@ -78,15 +78,11 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         if isSearch {
             let cell = tableView.dequeueReusableCell(withIdentifier: SearchTVC.reuseIdentifier, for: indexPath) as! SearchTVC
             cell.updateCell(user: user[indexPath.row], userName: searchController.searchBar.text!)
-             cell.cellSetup()
-            
-             return cell
+            return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: MainTVC.reuseIdentifier, for: indexPath) as! MainTVC
-             cell.updateCell(info: btnsSetup[indexPath.row])
-            cell.addViews()
-            cell.addConstraints()
-             return cell
+            cell.updateCell(info: btnsSetup[indexPath.row])
+            return cell
         }
       
     }
